@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url(pexels-photo-1714208.webp);
+  background-size: cover;
+}
+
+header {
+  background-image: linear-gradient(135deg, #47a1ab, #403e41);
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav .menu li a {
+  color: #f7f30e;
+  text-decoration: none;
+}
+
+.container > p {
+  font-size: 1.2rem;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ededea;
+  padding: 2rem;
+  width: 600px;
+  border-radius: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.nav .menu {
+  font-weight: 600;
+}
+
+.nav .logo {
+  text-decoration: none;
+  color: #ffffff;
+ text-shadow: 2px 2px 4px rgba(80, 3, 99, 0.6);
+}
+
+.nav .logo:hover{
+  color: #edf1f1; 
+  text-shadow: 5px 5px 8px rgba(102, 0, 156, 0.8)
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+#hero {
+  position: relative;
+  height: 80vh;
+}
+
+#hero .images {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  z-index: 99;
+  width: 150px;
+  height: 150px;
+  background-color: #e0e0d7;
+  box-shadow: 10px 0 10px rgba(78, 28, 91, 0.6), -10px 0 10px rgba(125, 43, 117, 0.6),
+    0 10px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+}
+
+#hero .images img {
+  position: absolute;
+  width: 140px;
+  z-index: 1000;
+  top: -75px;
+  left: 5px;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+
+.btn button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 2rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+
+.btn button:hover {
+  background-color: #555; /* Ubah warna latar belakang saat hover */
+  transform: translateY(-2px);
+}
+
+.btn button:active {
+  background-color: #e5db20;
+  transform: translateY(1px);
+}
+
+.btn:hover {
+  background-color: #7ea82f;
+}
+
+footer {
+  background-color: #6b6a67;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.jadwal h3 {
+  color: #2f2e24;
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.jadwal {
+  max-width: 576px;
+  max-height: 30x;
+  background-color: #e0e0d7;
+  margin: 2rem auto;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 10px 0 10px rgba(78, 28, 91, 0.6), -10px 0 10px rgba(125, 43, 117, 0.6),
+  0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
+.main__tables tr:hover {
+  background-color: #7cdc06;
+}
+
+
+.main__tables th {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 10px 0 10px rgba(78, 28, 91, 0.6), -10px 0 10px rgba(125, 43, 117, 0.6),
+  0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.main__tables td {
+  padding: 10px;
+  text-align: center;
+}
+
+
+.jadwal h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+  
+}
+
+/* Animasi */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.main__tables {
+  animation: slideInFromLeft 1s ease;
+}
+
+.main__tables {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #cea7d9ca 50%, #e0e0df 50%);
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 0 10px rgba(19, 12, 21, 0.6), -10px 0 10px rgba(176, 132, 172, 0.6),
+  0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+.jadwal {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.jadwal h3 {
+  font-size: 24px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  opacity: 0; /* Mulai dari keadaan tidak terlihat */
+  transform: translateY(-20px); /* Mulai dari posisi di atas */
+  animation: slideInFromTop 0.5s ease forwards; /* Animasi masuk */
+}
+
+/* Animasi masuk */
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efek hover pada judul */
+.jadwal h3:hover {
+  color: #9e44b3; /* Warna berubah saat dihover */
+}
+
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  box-shadow: 10px 0 10px rgba(255, 192, 203, 1),
+    0 2px 10px rgba(255, 192, 203, 1);
+}
+
+
+.container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  overflow: hidden; /* Mengatur overflow agar animasi teks mengetik bekerja */
+  white-space: nowrap; /* Agar teks mengetik tidak mematah-patah */
+  border-right: 3px solid transparent; /* Garis bawah inisial */
+  animation: typing 2s steps(40) forwards, blink-caret 0.5s step-end infinite; /* Animasi teks mengetik */
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.container p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.container .btn {
+  text-decoration: none;
+}
+
+.container .btn button:hover {
+  background-color: #39e63f;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+  text-align: right;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #d5dc06;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  margin-top: 2px;
+}
+
+.menu li a:hover {
+  background-color: #31e119;
+  color: #fff;
+}
+
+
+footer {
+  background-color: #47a1ab; /* Warna latar belakang */
+  color: #fff; /* Warna teks */
+  padding: 20px 0; /* Padding atas dan bawah */
+  text-align: center; 
+  transition: background-color 0.3s ease; 
+}
+
+footer:hover {
+  background-color: #81c0fb; 
+}
+
+.containers {
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.containers p {
+  margin: 0; 
+  font-size: 16px; 
+  transition: color 0.3s ease; 
+}
+
+.containers p:hover {
+  color: #2b2b2b; 
+}
+
+
